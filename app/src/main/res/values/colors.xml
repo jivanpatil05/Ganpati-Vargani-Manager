@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange_primary">#3DA9FC</color>
+    <color name="orange_dark">#1D8FE8</color>
+    <color name="gold_accent">#F59E0B</color>
+    <color name="peacock_blue">#3DA9FC</color>
+    <color name="ivory_white">#F8FBFD</color>
+    <color name="soft_cream">#EAF6FF</color>
+    <color name="charcoal">#0F172A</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="splash_background">#F8FBFD</color>
+</resources>

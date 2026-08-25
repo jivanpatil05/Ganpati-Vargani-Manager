@@ -1,0 +1,140 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function userDoc() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+
+    function userExists() {
+      return exists(/databases/$(database)/documents/users/$(request.auth.uid));
+    }
+
+    function isAdmin() {
+      return isSignedIn() && userExists() && userDoc().role == 'ADMIN';
+    }
+
+    function isViewer() {
+      return isSignedIn() && userExists() && userDoc().role == 'VIEWER';
+    }
+
+    function isViewerOrAdmin() {
+      return isSignedIn() && userExists()
+        && (userDoc().role == 'ADMIN' || userDoc().role == 'VIEWER');
+    }
+
+    function sameCommittee(committeeId) {
+      return isSignedIn() && userExists() && userDoc().committeeId == committeeId;
+    }
+
+    function isCommitteeCreator(committeeId) {
+      return isSignedIn()
+        && get(/databases/$(database)/documents/committees/$(committeeId)).data.createdBy
+          == request.auth.uid;
+    }
+
+    // When true (default), viewers may add / edit / delete committee data.
+    function committeeViewersCanWrite() {
+      let s = get(/databases/$(database)/documents/settings/$(userDoc().committeeId)).data;
+      return !('viewersEnabled' in s) || s.viewersEnabled == true;
+    }
+
+    function canWriteCommitteeData() {
+      return isAdmin() || (isViewer() && committeeViewersCanWrite());
+    }
+
+    // users/{uid}
+    match /users/{userId} {
+      allow read: if isSignedIn()
+        && (request.auth.uid == userId
+            || (isViewerOrAdmin() && resource.data.committeeId == userDoc().committeeId));
+      // Self-create (signup / admin-invite via secondary auth).
+      // Admin may also create a VIEWER in the same committee.
+      allow create: if isSignedIn()
+        && request.resource.data.keys().hasAll(['name', 'email', 'role', 'committeeId'])
+        && (
+          request.auth.uid == userId
+          || (
+            isAdmin()
+            && request.resource.data.role == 'VIEWER'
+            && request.resource.data.committeeId == userDoc().committeeId
+          )
+        );
+      allow update: if (isAdmin() && resource.data.committeeId == userDoc().committeeId)
+        || (request.auth.uid == userId);
+      allow delete: if isAdmin()
+        && resource.data.committeeId == userDoc().committeeId
+        && request.auth.uid != userId;
+    }
+
+    // committees/{committeeId}
+    match /committees/{committeeId} {
+      // Creator must be able to read their own committee during signup bootstrap.
+      allow read: if sameCommittee(committeeId)
+        || (isSignedIn() && resource.data.createdBy == request.auth.uid);
+      allow create: if isSignedIn()
+        && request.resource.data.createdBy == request.auth.uid;
+      allow update, delete: if isAdmin() && sameCommittee(committeeId);
+    }
+
+    // members/{memberId}
+    match /members/{memberId} {
+      allow read: if isViewerOrAdmin()
+        && resource.data.committeeId == userDoc().committeeId;
+      allow create, update, delete: if canWriteCommitteeData()
+        && request.resource.data.committeeId == userDoc().committeeId;
+    }
+
+    // payments/{paymentId}  (donations)
+    match /payments/{paymentId} {
+      allow read: if isViewerOrAdmin()
+        && resource.data.committeeId == userDoc().committeeId;
+      allow create: if canWriteCommitteeData()
+        && request.resource.data.committeeId == userDoc().committeeId;
+      allow update, delete: if canWriteCommitteeData()
+        && resource.data.committeeId == userDoc().committeeId;
+    }
+
+    // expenses/{expenseId}
+    match /expenses/{expenseId} {
+      allow read: if isViewerOrAdmin()
+        && resource.data.committeeId == userDoc().committeeId;
+      allow create: if canWriteCommitteeData()
+        && request.resource.data.committeeId == userDoc().committeeId;
+      allow update, delete: if canWriteCommitteeData()
+        && resource.data.committeeId == userDoc().committeeId;
+    }
+
+    // events/{eventId}
+    match /events/{eventId} {
+      allow read: if isViewerOrAdmin()
+        && resource.data.committeeId == userDoc().committeeId;
+      allow create: if canWriteCommitteeData()
+        && request.resource.data.committeeId == userDoc().committeeId;
+      allow update, delete: if canWriteCommitteeData()
+        && resource.data.committeeId == userDoc().committeeId;
+    }
+
+    // settings/{committeeId} — admin full write; writers may only bump receiptCounter
+    match /settings/{committeeId} {
+      allow read: if sameCommittee(committeeId)
+        || isCommitteeCreator(committeeId);
+      allow create: if isCommitteeCreator(committeeId)
+        || (isAdmin() && sameCommittee(committeeId));
+      allow update: if sameCommittee(committeeId) && (
+        isAdmin()
+        || (
+          canWriteCommitteeData()
+          && request.resource.data.diff(resource.data).affectedKeys()
+            .hasOnly(['receiptCounter'])
+        )
+      );
+      allow delete: if false;
+    }
+  }
+}

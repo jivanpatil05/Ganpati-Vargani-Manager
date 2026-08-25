@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Ganpati silhouette: elephant head with crown and trunk -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M54,12 C42,12 34,20 32,32 C28,34 24,40 24,48 C24,56 28,62 34,64 L34,72 C34,78 38,82 44,82 L48,82 L48,88 C48,92 51,95 55,95 C59,95 62,92 62,88 L62,82 L66,82 C72,82 76,78 76,72 L76,64 C82,62 86,56 86,48 C86,40 82,34 78,32 C76,20 68,12 56,12 Z M54,18 C64,18 70,24 72,34 C68,36 64,40 62,46 C60,44 57,42 54,42 C51,42 48,44 46,46 C44,40 40,36 36,34 C38,24 44,18 54,18 Z M54,48 C58,48 62,52 62,56 C62,60 58,64 54,64 C50,64 46,60 46,56 C46,52 50,48 54,48 Z M40,52 C42,58 47,62 54,62 C61,62 66,58 68,52 C70,54 72,58 72,62 L72,72 C72,74 70,76 68,76 L44,76 C42,76 40,74 40,72 L40,62 C40,58 42,54 44,52 Z" />
+
+    <!-- Crown -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M38,22 L42,30 L48,24 L54,32 L60,24 L66,30 L70,22 L68,36 L40,36 Z" />
+
+    <!-- Trunk curve -->
+    <path
+        android:fillColor="#F57C00"
+        android:pathData="M54,64 C54,64 58,68 58,76 C58,80 56,84 52,84 C48,84 46,80 48,76 C50,72 54,68 54,64 Z" />
+</vector>

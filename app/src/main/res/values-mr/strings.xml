@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">गणपती वर्गणी व्यवस्थापक</string>
+    <string name="app_tagline">ऑफलाइन वर्गणी संकलन</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">डॅशबोर्ड</string>
+    <string name="nav_donors">दाता</string>
+    <string name="nav_reports">अहवाल</string>
+    <string name="nav_settings">सेटिंग्ज</string>
+    <string name="nav_profile">प्रोफाइल</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">डॅशबोर्ड</string>
+    <string name="total_collection">एकूण जमा</string>
+    <string name="today_collection">आज</string>
+    <string name="weekly_collection">या आठवड्यात</string>
+    <string name="monthly_collection">या महिन्यात</string>
+    <string name="total_donors">एकूण दाते</string>
+    <string name="average_donation">सरासरी</string>
+    <string name="highest_donation">सर्वाधिक</string>
+    <string name="cash_collection">रोख</string>
+    <string name="upi_collection">UPI</string>
+    <string name="pending_receipts">प्रलंबित पावत्या</string>
+    <string name="recent_donations">अलीकडील वर्गणी</string>
+    <string name="top_collectors">शीर्ष संकलक</string>
+    <string name="collection_trend">जमा ट्रेंड</string>
+    <string name="quick_actions">त्वरित क्रिया</string>
+    <string name="quick_action_reports_hint">चार्ट आणि विश्लेषण</string>
+    <string name="quick_action_add_viewer_hint">व्ह्यूअर खाती तयार करा</string>
+    <string name="quick_action_donors_hint">शोधा आणि व्यवस्थापित करा</string>
+    <string name="quick_action_history_hint">शिल्लक आणि सर्व व्यवहार</string>
+    <string name="quick_action_export_hint">CSV, Excel, PDF</string>
+    <string name="action_add_donation">वर्गणी जोडा</string>
+    <string name="action_reports">अहवाल</string>
+    <string name="action_add_viewer">व्ह्यूअर जोडा</string>
+    <string name="action_backup">बॅकअप</string>
+    <string name="action_history">इतिहास</string>
+    <string name="action_export">एक्सपोर्ट</string>
+    <string name="backup_page_title">बॅकअप आणि डेटा</string>
+    <string name="backup_page_subtitle">समिती डेटा बॅकअप, रिस्टोर, एक्सपोर्ट किंवा रीसेट करा.</string>
+    <string name="see_all">सर्व पहा</string>
+
+    <!-- Donation form -->
+    <string name="add_donation">वर्गणी जोडा</string>
+    <string name="edit_donation">वर्गणी संपादा</string>
+    <string name="donation_details">वर्गणी तपशील</string>
+    <string name="receipt_number">पावती क्रमांक</string>
+    <string name="donor_name">दात्याचे नाव</string>
+    <string name="mobile_number">मोबाइल नंबर</string>
+    <string name="email_optional">ईमेल (ऐच्छिक)</string>
+    <string name="address">पत्ता</string>
+    <string name="city">शहर</string>
+    <string name="pincode">पिनकोड</string>
+    <string name="amount">रक्कम</string>
+    <string name="payment_mode">पेमेंट पद्धत</string>
+    <string name="payment_cash">रोख</string>
+    <string name="payment_upi">UPI</string>
+    <string name="collector_name">संकलकाचे नाव</string>
+    <string name="date">दिनांक</string>
+    <string name="time">वेळ</string>
+    <string name="notes">टिप्पणी</string>
+    <string name="save_donation">वर्गणी जतन करा</string>
+    <string name="update_donation">वर्गणी अद्यतनित करा</string>
+    <string name="donation_saved">वर्गणी यशस्वीरित्या जतन झाली</string>
+    <string name="donation_updated">वर्गणी यशस्वीरित्या अद्यतनित झाली</string>
+    <string name="donation_deleted">वर्गणी हटवली</string>
+    <string name="undo">पूर्ववत</string>
+
+    <!-- Validation -->
+    <string name="error_name_required">दात्याचे नाव आवश्यक आहे</string>
+    <string name="error_amount_required">रक्कम आवश्यक आहे</string>
+    <string name="error_amount_positive">रक्कम शून्यापेक्षा जास्त असावी</string>
+    <string name="error_mobile_invalid">वैध १० अंकी मोबाइल नंबर टाका</string>
+    <string name="error_receipt_unique">पावती क्रमांक आधीच अस्तित्वात आहे</string>
+    <string name="error_collector_required">संकलकाचे नाव आवश्यक आहे</string>
+    <string name="error_email_invalid">वैध ईमेल पत्ता टाका</string>
+    <string name="error_pincode_invalid">वैध ६ अंकी पिनकोड टाका</string>
+    <string name="error_generic">काहीतरी चुकले. पुन्हा प्रयत्न करा.</string>
+    <string name="select_date">दिनांक निवडा</string>
+    <string name="select_time">वेळ निवडा</string>
+
+    <!-- Donor list -->
+    <string name="search_donors">नाव, पावती, मोबाइल शोधा…</string>
+    <string name="filter">फिल्टर</string>
+    <string name="sort">क्रमवारी</string>
+    <string name="sort_latest">नवीनतम</string>
+    <string name="sort_oldest">जुने</string>
+    <string name="sort_highest">सर्वाधिक रक्कम</string>
+    <string name="sort_lowest">सर्वात कमी रक्कम</string>
+    <string name="sort_alphabetical">अक्षरक्रमानुसार</string>
+    <string name="apply_filters">फिल्टर लागू करा</string>
+    <string name="clear_filters">साफ करा</string>
+    <string name="no_donations">अद्याप वर्गणी नाही</string>
+    <string name="no_donations_hint">पहिली वर्गणी नोंदवण्यासाठी + दाबा</string>
+    <string name="no_search_results">जुळणाऱ्या वर्गणी सापडल्या नाहीत</string>
+    <string name="swipe_edit">संपादन</string>
+    <string name="swipe_delete">हटवा</string>
+
+    <!-- Details actions -->
+    <string name="edit">संपादन</string>
+    <string name="delete">हटवा</string>
+    <string name="generate_receipt">पावती तयार करा</string>
+    <string name="share_receipt">पावती शेअर करा</string>
+    <string name="print_receipt">पावती प्रिंट करा</string>
+    <string name="confirm_delete_title">वर्गणी हटवायची?</string>
+    <string name="confirm_delete_message">ही क्रिया थोड्या वेळासाठी स्नॅकबारमधून पूर्ववत करता येईल.</string>
+    <string name="confirm">पुष्टी करा</string>
+    <string name="cancel">रद्द करा</string>
+
+    <!-- Reports -->
+    <string name="reports_title">अहवाल</string>
+    <string name="daily_collection">दैनिक जमा</string>
+    <string name="weekly_report">साप्ताहिक जमा</string>
+    <string name="monthly_report">मासिक जमा</string>
+    <string name="yearly_report">वार्षिक जमा</string>
+    <string name="collector_wise">संकलकनिहाय</string>
+    <string name="cash_vs_upi">रोख विरुद्ध UPI</string>
+    <string name="top_donors">शीर्ष दाते</string>
+    <string name="lowest_donation">सर्वात कमी</string>
+    <string name="export_pdf">PDF एक्सपोर्ट</string>
+    <string name="export_csv">CSV एक्सपोर्ट</string>
+    <string name="export_excel">Excel एक्सपोर्ट</string>
+    <string name="export_success">एक्सपोर्ट शेअर करण्यासाठी तयार</string>
+
+    <!-- Receipt -->
+    <string name="receipt_preview">पावती पूर्वावलोकन</string>
+    <string name="share">शेअर</string>
+    <string name="print">प्रिंट</string>
+    <string name="reprint">पुन्हा प्रिंट</string>
+    <string name="receipt_generated">पावती तयार झाली</string>
+
+    <!-- Settings -->
+    <string name="settings_title">सेटिंग्ज</string>
+    <string name="appearance">देखावा</string>
+    <string name="language">भाषा</string>
+    <string name="language_english">English</string>
+    <string name="language_marathi">मराठी</string>
+    <string name="language_changed">भाषा बदलली</string>
+    <string name="dark_mode">डार्क मोड</string>
+    <string name="dynamic_colors">डायनॅमिक रंग</string>
+    <string name="organization">संस्था</string>
+    <string name="organization_name">संस्थेचे नाव</string>
+    <string name="organization_address">संस्थेचा पत्ता</string>
+    <string name="organization_profile_hint">या समितीच्या पावत्या आणि अहवालांवर दाखवले जाते</string>
+    <string name="organization_save">संस्था जतन करा</string>
+    <string name="organization_saved">संस्था तपशील जतन झाले</string>
+    <string name="receipt_settings">पावती सेटिंग्ज</string>
+    <string name="receipt_prefix">पावती उपसर्ग</string>
+    <string name="receipt_starting_number">सुरुवातीचा क्रमांक</string>
+    <string name="whatsapp_notify_section">WhatsApp ग्रुप</string>
+    <string name="whatsapp_notify_on_save">जतन केल्यानंतर WhatsApp वर शेअर करा</string>
+    <string name="whatsapp_notify_hint">नवीन वर्गणी किंवा खर्च जतन केल्यानंतर WhatsApp उघडेल. तुमचा ग्रुप निवडा आणि पाठवा टॅप करा.</string>
+    <string name="wa_new_donation_title">नवीन वर्गणी (येणारे)</string>
+    <string name="wa_new_expense_title">नवीन खर्च (जाणारे)</string>
+    <string name="wa_message_footer">— %1$s</string>
+    <string name="wa_notify_pick_group">तुमचा WhatsApp ग्रुप निवडा आणि पाठवा टॅप करा</string>
+    <string name="data_management">डेटा व्यवस्थापन</string>
+    <string name="backup_database">डेटाबेस बॅकअप</string>
+    <string name="restore_database">डेटाबेस पुनर्स्थापित करा</string>
+    <string name="import_backup">बॅकअप आयात करा</string>
+    <string name="reset_data">सर्व डेटा रीसेट करा</string>
+    <string name="confirm_reset_title">सर्व डेटा रीसेट करायचा?</string>
+    <string name="confirm_reset_message">हे सर्व वर्गणी कायमस्वरूपी हटवेल आणि पूर्ववत करता येणार नाही.</string>
+    <string name="about">आमच्याबद्दल</string>
+    <string name="privacy_policy">गोपनीयता धोरण</string>
+    <string name="app_version">अॅप आवृत्ती</string>
+    <string name="developer_info">डेव्हलपर माहिती</string>
+    <string name="developer_name">गणपती वर्गणी टीम</string>
+    <string name="privacy_policy_body">सर्व वर्गणी डेटा या डिव्हाइसवरच राहतो. कोणतीही वैयक्तिक माहिती सर्व्हरवर अपलोड होत नाही. तुम्ही तयार केलेले बॅकअप फक्त तुम्ही जतन किंवा शेअर केलेल्या ठिकाणीच राहतात.</string>
+    <string name="backup_success">बॅकअप यशस्वीरित्या तयार झाला</string>
+    <string name="restore_success">डेटाबेस यशस्वीरित्या पुनर्स्थापित झाला</string>
+    <string name="restore_failed">पुनर्स्थापना अयशस्वी. वैध बॅकअप zip फाईल निवडा.</string>
+    <string name="settings_saved">सेटिंग्ज जतन झाली</string>
+    <string name="file_saved_to_downloads">डाउनलोड्समध्ये जतन: %1$s</string>
+    <string name="file_saved_success">फाईल यशस्वीरित्या जतन झाली</string>
+    <string name="export_choose_action_title">क्रिया निवडा</string>
+    <string name="export_choose_action_message">%1$s कसे जतन करायचे?</string>
+    <string name="action_download">डाउनलोड</string>
+    <string name="action_download_hint">या डिव्हाइसच्या डाउनलोड्समध्ये जतन करा</string>
+    <string name="action_share_hint">WhatsApp, Drive किंवा इतर अॅप्सद्वारे पाठवा</string>
+
+    <!-- Common -->
+    <string name="loading">लोड होत आहे…</string>
+    <string name="retry">पुन्हा प्रयत्न करा</string>
+    <string name="close">बंद करा</string>
+    <string name="ok">ठीक आहे</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="currency_format">₹%1$.2f</string>
+    <string name="splash_continue">स्वागत आहे</string>
+    <string name="cd_ganpati_logo">गणपती लोगो</string>
+    <string name="cd_add_donation">वर्गणी जोडा</string>
+    <string name="cd_navigate_back">मागे जा</string>
+    <string name="cd_open_filters">फिल्टर उघडा</string>
+    <string name="cd_open_sort">क्रमवारी पर्याय उघडा</string>
+
+    <!-- Auth -->
+    <string name="auth_welcome">स्वागत आहे</string>
+    <string name="auth_login">लॉग इन</string>
+    <string name="auth_signup">साइन अप</string>
+    <string name="auth_login_subtitle">OTP मिळवण्यासाठी तुमचा WhatsApp मोबाइल नंबर टाका</string>
+    <string name="auth_login_subtitle_email">ईमेल आणि पासवर्डने साइन इन करा</string>
+    <string name="auth_signup_subtitle">नाव आणि WhatsApp नंबराने खाते तयार करा</string>
+    <string name="auth_signup_subtitle_email">तुमच्या समितीसाठी अॅडमिन खाते तयार करा</string>
+    <string name="auth_email">ईमेल</string>
+    <string name="auth_email_hint">name@example.com</string>
+    <string name="auth_password">पासवर्ड</string>
+    <string name="auth_create_account">खाते तयार करा</string>
+    <string name="auth_error_email_invalid">वैध ईमेल पत्ता टाका</string>
+    <string name="auth_error_password_short">पासवर्ड किमान ६ अक्षरे असावा</string>
+    <string name="auth_mobile_optional">पर्यायी — पावतीवर संपर्क म्हणून</string>
+    <string name="auth_role_viewer_readonly">व्ह्यूअर मोड — डेटा पाहू शकता पण संपादन नाही</string>
+    <string name="auth_full_name">पूर्ण नाव</string>
+    <string name="auth_mobile_hint">१० अंकी मोबाइल नंबर</string>
+    <string name="auth_send_otp">WhatsApp वर OTP पाठवा</string>
+    <string name="auth_verify_otp">OTP पडताळा</string>
+    <string name="auth_enter_otp">६ अंकी OTP टाका</string>
+    <string name="auth_verify">पडताळा आणि पुढे जा</string>
+    <string name="auth_resend_otp">WhatsApp वर OTP पुन्हा पाठवा</string>
+    <string name="auth_otp_sent_to">%1$s वर WhatsApp द्वारे OTP पाठवला</string>
+    <string name="auth_otp_whatsapp_note">WhatsApp उघडा, तयार केलेला संदेश पाठवा, नंतर येथे OTP टाका. WhatsApp मध्ये आमंत्रित करा / नंबर WhatsApp वर नाही दिसल्यास, मागे जाऊन WhatsApp नंबर वापरा.</string>
+    <string name="auth_whatsapp_hint">OTP WhatsApp वर पाठवला जातो. WhatsApp असलेला नंबर वापरा.</string>
+    <string name="auth_go_to_signup">नवीन आहात? साइन अप करा</string>
+    <string name="auth_go_to_login">आधीच खाते आहे? लॉग इन करा</string>
+    <string name="auth_account">खाते</string>
+    <string name="auth_logout">लॉग आउट</string>
+    <string name="confirm_logout_title">लॉग आउट करायचे?</string>
+    <string name="confirm_logout_message">पुन्हा प्रवेश करण्यासाठी तुम्हाला पुन्हा साइन इन करावे लागेल.</string>
+    <string name="auth_error_name_required">नाव आवश्यक आहे</string>
+    <string name="auth_account_not_found">या नंबरसाठी खाते सापडले नाही. कृपया साइन अप करा.</string>
+    <string name="auth_account_exists">हा नंबर आधीच नोंदणीकृत आहे. कृपया लॉग इन करा.</string>
+    <string name="auth_whatsapp_not_installed">या डिव्हाइसवर WhatsApp इंस्टॉल नाही. OTP मिळवण्यासाठी WhatsApp इंस्टॉल करा.</string>
+    <string name="auth_no_whatsapp_account">या नंबरवर WhatsApp खाते नाही, किंवा चॅट उघडता आली नाही. कृपया वैध WhatsApp नंबर वापरा.</string>
+    <string name="auth_otp_invalid">चुकीचा OTP. पुन्हा प्रयत्न करा.</string>
+    <string name="auth_otp_expired">OTP कालबाह्य झाला. मागे जाऊन नवीन OTP मागा.</string>
+
+    <!-- Manage users (admin) -->
+    <string name="manage_users_title">वापरकर्ते व्यवस्थापित करा</string>
+    <string name="manage_users_subtitle">पहिला साइन अप अॅडमिन आहे. अॅडमिन फक्त वाचण्यासाठी २ व्ह्यूअर खाती तयार करू शकतो.</string>
+    <string name="manage_users_team">समिती वापरकर्ते</string>
+    <string name="manage_users_empty">अद्याप कोणतेही वापरकर्ते नाहीत.</string>
+    <string name="manage_users_you">तुम्ही</string>
+    <string name="manage_users_role_admin">अॅडमिन</string>
+    <string name="manage_users_role_viewer">व्ह्यूअर</string>
+    <string name="manage_users_create_viewer">व्ह्यूअर खाते तयार करा</string>
+    <string name="manage_users_slots">व्ह्यूअर: %1$d / %2$d · %3$d जागा शिल्लक</string>
+    <string name="manage_users_create_button">व्ह्यूअर तयार करा</string>
+    <string name="manage_users_create_hint">व्ह्यूअरला ईमेल आणि पासवर्ड द्या जेणेकरून ते लॉग इन करू शकतील. व्ह्यूअर डेटा पाहू शकतात पण जोडू/संपादित करू शकत नाहीत.</string>
+    <string name="manage_users_created">व्ह्यूअर खाते तयार झाले</string>
+    <string name="manage_users_limit_reached">तुमच्याकडे आधीच २ व्ह्यूअर खाती आहेत. नवीन जोडण्यासाठी Firebase मध्ये एक हटवा.</string>
+    <string name="manage_users_email_in_use">हा ईमेल आधीच नोंदणीकृत आहे</string>
+
+    <!-- Incoming / Outgoing -->
+    <string name="section_incoming">येणारे</string>
+    <string name="section_outgoing">जाणारे</string>
+    <string name="section_balance">शिल्लक</string>
+    <string name="section_history">इतिहास</string>
+    <string name="action_add_expense">खर्च जोडा</string>
+    <string name="cd_add_expense">खर्च जोडा</string>
+    <string name="add_expense">खर्च जोडा</string>
+    <string name="edit_expense">खर्च संपादन</string>
+    <string name="expense_details">खर्चाचे तपशील</string>
+    <string name="expense_title">खर्चाचे शीर्षक</string>
+    <string name="expense_category">श्रेणी</string>
+    <string name="expense_paid_by">कोणी भरले</string>
+    <string name="save_expense">खर्च जतन करा</string>
+    <string name="update_expense">खर्च अपडेट करा</string>
+    <string name="expense_saved">खर्च यशस्वीरित्या जतन झाला</string>
+    <string name="expense_updated">खर्च यशस्वीरित्या अपडेट झाला</string>
+    <string name="expense_error_title">खर्चाचे शीर्षक आवश्यक आहे</string>
+    <string name="search_expenses">शीर्षक, श्रेणी, कोणी भरले… शोधा</string>
+    <string name="recent_expenses">अलीकडील खर्च</string>
+    <string name="no_expenses">अद्याप खर्च नाही</string>
+    <string name="no_expenses_hint">सण खर्च ट्रॅक करण्यासाठी खर्च जोडा टॅप करा</string>
+    <string name="total_expenses">एकूण खर्च</string>
+    <string name="today_expenses">आज</string>
+    <string name="confirm_delete_expense_title">खर्च हटवायचा?</string>
+    <string name="confirm_delete_expense_message">हा खर्च कायमचा हटवला जाईल.</string>
+    <string name="expense_cat_puja">पूजा साहित्य</string>
+    <string name="expense_cat_decoration">सजावट</string>
+    <string name="expense_cat_prasad">प्रसाद</string>
+    <string name="expense_cat_sound">ध्वनी आणि प्रकाश</string>
+    <string name="expense_cat_transport">वाहतूक</string>
+    <string name="expense_cat_rent">भाडे</string>
+    <string name="expense_cat_utilities">उपयोगिता</string>
+    <string name="expense_cat_misc">इतर</string>
+
+    <!-- Profile -->
+    <string name="profile_title">प्रोफाइल</string>
+    <string name="profile_guest">अतिथी</string>
+    <string name="profile_account_label">लॉग इन कलेक्टर</string>
+    <string name="profile_balance_summary">शिल्लक सारांश</string>
+    <string name="profile_breakdown">रक्कम तपशील</string>
+    <string name="profile_breakdown_all">सर्व व्यवहार</string>
+    <string name="profile_breakdown_empty">अद्याप व्यवहार नाहीत</string>
+    <string name="profile_breakdown_empty_hint">येणारी वर्गणी आणि जाणारे खर्च येथे दिसतील</string>
+    <string name="viewer_access_section">व्ह्यूअर संपादन प्रवेश</string>
+    <string name="viewer_access_toggle">जोडणे, संपादन आणि हटवणे परवानगी</string>
+    <string name="viewer_access_on_hint">व्ह्यूअर वर्गणी आणि खर्च जोडू, संपादित आणि हटवू शकतात</string>
+    <string name="viewer_access_off_hint">व्ह्यूअर फक्त डेटा पाहू शकतात — जोडणे, संपादन आणि हटवणे बंद आहे</string>
+    <string name="viewers_access_enabled">व्ह्यूअर जोडणे/संपादन/हटवणे चालू</string>
+    <string name="viewers_access_disabled">व्ह्यूअर जोडणे/संपादन/हटवणे बंद</string>
+    <string name="total_incoming">एकूण येणारे</string>
+    <string name="total_outgoing">एकूण जाणारे</string>
+    <string name="remaining_balance">उरलेली रक्कम</string>
+    <string name="remaining_balance_hint">येणारे वजा जाणारे</string>
+    <string name="remaining_balance_overspent">जाणारे येणार्‍यापेक्षा जास्त आहे</string>
+
+    <!-- Payment account details -->
+    <string name="payment_account_details">पेमेंट खाते तपशील</string>
+    <string name="payment_account_hint">UPI, बँक तपशील आणि QR कोड जोडा जेणेकरून देणगीदार सहज पैसे देऊ शकतील</string>
+    <string name="payment_account_view_hint">या समितीचे पेमेंट खाते तपशील</string>
+    <string name="payment_upi_id">UPI आयडी</string>
+    <string name="payment_upi_id_hint">name@upi</string>
+    <string name="payment_account_holder">खातेधारकाचे नाव</string>
+    <string name="payment_bank_name">बँकेचे नाव</string>
+    <string name="payment_account_number">खाते क्रमांक</string>
+    <string name="payment_ifsc">IFSC कोड</string>
+    <string name="payment_qr_code">पेमेंट QR कोड</string>
+    <string name="payment_qr_empty">QR अपलोड नाही</string>
+    <string name="payment_upload_qr">QR अपलोड करा</string>
+    <string name="payment_change_qr">QR बदला</string>
+    <string name="payment_remove_qr">काढा</string>
+    <string name="payment_save_details">पेमेंट तपशील जतन करा</string>
+    <string name="payment_details_saved">पेमेंट तपशील जतन झाले</string>
+    <string name="payment_qr_uploaded">QR कोड अपलोड झाला</string>
+    <string name="payment_qr_removed">QR कोड काढला</string>
+    <string name="payment_qr_upload_failed">QR इमेज अपलोड करता आली नाही. पुन्हा प्रयत्न करा.</string>
+    <string name="payment_qr_crop_title">QR कोड क्रॉप करा</string>
+    <string name="payment_qr_crop_done">फोटो वापरा</string>
+    <string name="payment_qr_crop_failed">QR इमेज क्रॉप करता आली नाही. पुन्हा प्रयत्न करा.</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Include Room database and DataStore preferences in Android Auto Backup -->
+    <include domain="database" path="." />
+    <include domain="file" path="datastore/." />
+    <include domain="sharedpref" path="." />
+    <exclude domain="file" path="exports/" />
+    <exclude domain="cache" path="." />
+</full-backup-content>

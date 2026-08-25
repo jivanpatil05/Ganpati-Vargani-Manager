@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "55504246850",
+    "project_id": "ganpati-vargani-manager",
+    "storage_bucket": "ganpati-vargani-manager.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55504246850:android:285e72244e64db8f1375db",
+        "android_client_info": {
+          "package_name": "com.ganpati.vargani"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDcVOemhn5nDqMmE4ddz92RsEvUATUG2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55504246850:android:285e72244e64db8f1375db",
+        "android_client_info": {
+          "package_name": "com.ganpati.vargani.debug"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDcVOemhn5nDqMmE4ddz92RsEvUATUG2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

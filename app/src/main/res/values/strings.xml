@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ganpati Vargani Manager</string>
+    <string name="app_tagline">Offline donation collections</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_donors">Donors</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Dashboard</string>
+    <string name="total_collection">Total Collection</string>
+    <string name="today_collection">Today</string>
+    <string name="weekly_collection">This Week</string>
+    <string name="monthly_collection">This Month</string>
+    <string name="total_donors">Total Donors</string>
+    <string name="average_donation">Average</string>
+    <string name="highest_donation">Highest</string>
+    <string name="cash_collection">Cash</string>
+    <string name="upi_collection">UPI</string>
+    <string name="pending_receipts">Pending Receipts</string>
+    <string name="recent_donations">Recent Donations</string>
+    <string name="top_collectors">Top Collectors</string>
+    <string name="collection_trend">Collection Trend</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="quick_action_reports_hint">Charts &amp; insights</string>
+    <string name="quick_action_add_viewer_hint">Create viewer accounts</string>
+    <string name="quick_action_donors_hint">Search &amp; manage</string>
+    <string name="quick_action_history_hint">Balance &amp; all transactions</string>
+    <string name="quick_action_export_hint">CSV, Excel, PDF</string>
+    <string name="action_add_donation">Add Donation</string>
+    <string name="action_reports">Reports</string>
+    <string name="action_add_viewer">Add Viewer</string>
+    <string name="action_backup">Backup</string>
+    <string name="action_history">History</string>
+    <string name="action_export">Export</string>
+    <string name="backup_page_title">Backup &amp; Data</string>
+    <string name="backup_page_subtitle">Backup, restore, export, or reset committee data.</string>
+    <string name="see_all">See all</string>
+
+    <!-- Donation form -->
+    <string name="add_donation">Add Donation</string>
+    <string name="edit_donation">Edit Donation</string>
+    <string name="donation_details">Donation Details</string>
+    <string name="receipt_number">Receipt Number</string>
+    <string name="donor_name">Donor Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email_optional">Email (Optional)</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="pincode">Pincode</string>
+    <string name="amount">Amount</string>
+    <string name="payment_mode">Payment Mode</string>
+    <string name="payment_cash">Cash</string>
+    <string name="payment_upi">UPI</string>
+    <string name="collector_name">Collector Name</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="notes">Notes</string>
+    <string name="save_donation">Save Donation</string>
+    <string name="update_donation">Update Donation</string>
+    <string name="donation_saved">Donation saved successfully</string>
+    <string name="donation_updated">Donation updated successfully</string>
+    <string name="donation_deleted">Donation deleted</string>
+    <string name="undo">Undo</string>
+
+    <!-- Validation -->
+    <string name="error_name_required">Donor name is required</string>
+    <string name="error_amount_required">Amount is required</string>
+    <string name="error_amount_positive">Amount must be greater than zero</string>
+    <string name="error_mobile_invalid">Enter a valid 10-digit mobile number</string>
+    <string name="error_receipt_unique">Receipt number already exists</string>
+    <string name="error_collector_required">Collector name is required</string>
+    <string name="error_email_invalid">Enter a valid email address</string>
+    <string name="error_pincode_invalid">Enter a valid 6-digit pincode</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="select_date">Select date</string>
+    <string name="select_time">Select time</string>
+
+    <!-- Donor list -->
+    <string name="search_donors">Search name, receipt, mobile…</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="sort_latest">Latest</string>
+    <string name="sort_oldest">Oldest</string>
+    <string name="sort_highest">Highest Amount</string>
+    <string name="sort_lowest">Lowest Amount</string>
+    <string name="sort_alphabetical">Alphabetical</string>
+    <string name="apply_filters">Apply Filters</string>
+    <string name="clear_filters">Clear</string>
+    <string name="no_donations">No donations yet</string>
+    <string name="no_donations_hint">Tap + to record your first vargani</string>
+    <string name="no_search_results">No matching donations</string>
+    <string name="swipe_edit">Edit</string>
+    <string name="swipe_delete">Delete</string>
+
+    <!-- Details actions -->
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="generate_receipt">Generate Receipt</string>
+    <string name="share_receipt">Share Receipt</string>
+    <string name="print_receipt">Print Receipt</string>
+    <string name="confirm_delete_title">Delete donation?</string>
+    <string name="confirm_delete_message">This action can be undone from the snackbar for a short time.</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Reports -->
+    <string name="reports_title">Reports</string>
+    <string name="daily_collection">Daily Collection</string>
+    <string name="weekly_report">Weekly Collection</string>
+    <string name="monthly_report">Monthly Collection</string>
+    <string name="yearly_report">Yearly Collection</string>
+    <string name="collector_wise">Collector Wise</string>
+    <string name="cash_vs_upi">Cash vs UPI</string>
+    <string name="top_donors">Top Donors</string>
+    <string name="lowest_donation">Lowest</string>
+    <string name="export_pdf">Export PDF</string>
+    <string name="export_csv">Export CSV</string>
+    <string name="export_excel">Export Excel</string>
+    <string name="export_success">Export ready to share</string>
+
+    <!-- Receipt -->
+    <string name="receipt_preview">Receipt Preview</string>
+    <string name="share">Share</string>
+    <string name="print">Print</string>
+    <string name="reprint">Reprint</string>
+    <string name="receipt_generated">Receipt generated</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="appearance">Appearance</string>
+    <string name="language">Language</string>
+    <string name="language_english">English</string>
+    <string name="language_marathi">मराठी</string>
+    <string name="language_changed">Language updated</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="dynamic_colors">Dynamic Colors</string>
+    <string name="organization">Organization</string>
+    <string name="organization_name">Organization Name</string>
+    <string name="organization_address">Organization Address</string>
+    <string name="organization_profile_hint">Shown on receipts and reports for this committee</string>
+    <string name="organization_save">Save organization</string>
+    <string name="organization_saved">Organization details saved</string>
+    <string name="receipt_settings">Receipt Settings</string>
+    <string name="receipt_prefix">Receipt Prefix</string>
+    <string name="receipt_starting_number">Starting Number</string>
+    <string name="whatsapp_notify_section">WhatsApp Group</string>
+    <string name="whatsapp_notify_on_save">Share to WhatsApp after save</string>
+    <string name="whatsapp_notify_hint">After a new donation or expense, WhatsApp opens with the message ready. Pick your group and tap Send.</string>
+    <string name="wa_new_donation_title">New Donation (Incoming)</string>
+    <string name="wa_new_expense_title">New Expense (Outgoing)</string>
+    <string name="wa_message_footer">— %1$s</string>
+    <string name="wa_notify_pick_group">Pick your WhatsApp group and tap Send</string>
+    <string name="data_management">Data Management</string>
+    <string name="backup_database">Backup Database</string>
+    <string name="restore_database">Restore Database</string>
+    <string name="import_backup">Import Backup</string>
+    <string name="reset_data">Reset All Data</string>
+    <string name="confirm_reset_title">Reset all data?</string>
+    <string name="confirm_reset_message">This permanently deletes all donations and cannot be undone.</string>
+    <string name="about">About</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="app_version">App Version</string>
+    <string name="developer_info">Developer Information</string>
+    <string name="developer_name">Ganpati Vargani Team</string>
+    <string name="privacy_policy_body">All donation data stays on this device. No personal information is uploaded to any server. Backups you create are stored only where you choose to save or share them.</string>
+    <string name="backup_success">Backup created successfully</string>
+    <string name="restore_success">Database restored successfully</string>
+    <string name="restore_failed">Restore failed. Select a valid backup zip file.</string>
+    <string name="settings_saved">Settings saved</string>
+    <string name="file_saved_to_downloads">Saved to Downloads: %1$s</string>
+    <string name="file_saved_success">File saved successfully</string>
+    <string name="export_choose_action_title">Choose action</string>
+    <string name="export_choose_action_message">How do you want to save %1$s?</string>
+    <string name="action_download">Download</string>
+    <string name="action_download_hint">Save to Downloads on this device</string>
+    <string name="action_share_hint">Send via WhatsApp, Drive, or other apps</string>
+
+    <!-- Common -->
+    <string name="loading">Loading…</string>
+    <string name="retry">Retry</string>
+    <string name="close">Close</string>
+    <string name="ok">OK</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="currency_format">₹%1$.2f</string>
+    <string name="splash_continue">Welcome</string>
+    <string name="cd_ganpati_logo">Ganpati logo</string>
+    <string name="cd_add_donation">Add donation</string>
+    <string name="cd_navigate_back">Navigate back</string>
+    <string name="cd_open_filters">Open filters</string>
+    <string name="cd_open_sort">Open sort options</string>
+
+    <!-- Auth -->
+    <string name="auth_welcome">Welcome</string>
+    <string name="auth_login">Log in</string>
+    <string name="auth_signup">Sign up</string>
+    <string name="auth_login_subtitle">Enter your WhatsApp mobile number to receive an OTP</string>
+    <string name="auth_login_subtitle_email">Sign in with your email and password</string>
+    <string name="auth_signup_subtitle">Create an account with your name and WhatsApp number</string>
+    <string name="auth_signup_subtitle_email">Create an admin account for your committee</string>
+    <string name="auth_email">Email</string>
+    <string name="auth_email_hint">name@example.com</string>
+    <string name="auth_password">Password</string>
+    <string name="auth_create_account">Create account</string>
+    <string name="auth_error_email_invalid">Enter a valid email address</string>
+    <string name="auth_error_password_short">Password must be at least 6 characters</string>
+    <string name="auth_mobile_optional">Optional — used on receipts as contact</string>
+    <string name="auth_role_viewer_readonly">Viewer mode — you can view data but cannot edit</string>
+    <string name="auth_full_name">Full name</string>
+    <string name="auth_mobile_hint">10-digit mobile number</string>
+    <string name="auth_send_otp">Send OTP on WhatsApp</string>
+    <string name="auth_verify_otp">Verify OTP</string>
+    <string name="auth_enter_otp">Enter 6-digit OTP</string>
+    <string name="auth_verify">Verify &amp; continue</string>
+    <string name="auth_resend_otp">Resend OTP on WhatsApp</string>
+    <string name="auth_otp_sent_to">OTP sent via WhatsApp to %1$s</string>
+    <string name="auth_otp_whatsapp_note">Open WhatsApp, send the prepared message to yourself (or the chat that opened), then enter the OTP here. If WhatsApp shows Invite / number not on WhatsApp, go back and use a WhatsApp number.</string>
+    <string name="auth_whatsapp_hint">OTP is sent on WhatsApp. Use a number that has a WhatsApp account.</string>
+    <string name="auth_go_to_signup">New here? Sign up</string>
+    <string name="auth_go_to_login">Already have an account? Log in</string>
+    <string name="auth_account">Account</string>
+    <string name="auth_logout">Log out</string>
+    <string name="confirm_logout_title">Log out?</string>
+    <string name="confirm_logout_message">You will need to sign in again to access this committee.</string>
+    <string name="auth_error_name_required">Name is required</string>
+    <string name="auth_account_not_found">No account found for this number. Please sign up.</string>
+    <string name="auth_account_exists">This number is already registered. Please log in.</string>
+    <string name="auth_whatsapp_not_installed">WhatsApp is not installed on this device. Install WhatsApp to receive OTP.</string>
+    <string name="auth_no_whatsapp_account">This number does not have a WhatsApp account, or WhatsApp could not open the chat. Please use a valid WhatsApp number.</string>
+    <string name="auth_otp_invalid">Incorrect OTP. Please try again.</string>
+    <string name="auth_otp_expired">OTP expired. Please go back and request a new one.</string>
+
+    <!-- Manage users (admin) -->
+    <string name="manage_users_title">Manage users</string>
+    <string name="manage_users_subtitle">First signup is Admin. Admin can create up to 2 Viewer accounts for read-only access.</string>
+    <string name="manage_users_team">Committee users</string>
+    <string name="manage_users_empty">No users found yet.</string>
+    <string name="manage_users_you">you</string>
+    <string name="manage_users_role_admin">Admin</string>
+    <string name="manage_users_role_viewer">Viewer</string>
+    <string name="manage_users_create_viewer">Create viewer account</string>
+    <string name="manage_users_slots">Viewers: %1$d / %2$d · %3$d slot(s) left</string>
+    <string name="manage_users_create_button">Create viewer</string>
+    <string name="manage_users_create_hint">Share the email and password with the viewer so they can log in. Viewers can see data but cannot add or edit.</string>
+    <string name="manage_users_created">Viewer account created</string>
+    <string name="manage_users_limit_reached">You already have 2 viewer accounts. Delete one in Firebase if you need to add another.</string>
+    <string name="manage_users_email_in_use">This email is already registered</string>
+
+    <!-- Incoming / Outgoing -->
+    <string name="section_incoming">Incoming</string>
+    <string name="section_outgoing">Outgoing</string>
+    <string name="section_balance">Balance</string>
+    <string name="section_history">History</string>
+    <string name="action_add_expense">Add Expense</string>
+    <string name="cd_add_expense">Add expense</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="edit_expense">Edit Expense</string>
+    <string name="expense_details">Expense Details</string>
+    <string name="expense_title">Expense title</string>
+    <string name="expense_category">Category</string>
+    <string name="expense_paid_by">Paid by</string>
+    <string name="save_expense">Save Expense</string>
+    <string name="update_expense">Update Expense</string>
+    <string name="expense_saved">Expense saved successfully</string>
+    <string name="expense_updated">Expense updated successfully</string>
+    <string name="expense_error_title">Expense title is required</string>
+    <string name="search_expenses">Search title, category, paid by…</string>
+    <string name="recent_expenses">Recent Expenses</string>
+    <string name="no_expenses">No expenses yet</string>
+    <string name="no_expenses_hint">Tap Add Expense to track festival spending</string>
+    <string name="total_expenses">Total Expenses</string>
+    <string name="today_expenses">Today</string>
+    <string name="confirm_delete_expense_title">Delete expense?</string>
+    <string name="confirm_delete_expense_message">This expense will be removed permanently.</string>
+    <string name="expense_cat_puja">Puja items</string>
+    <string name="expense_cat_decoration">Decoration</string>
+    <string name="expense_cat_prasad">Prasad</string>
+    <string name="expense_cat_sound">Sound &amp; light</string>
+    <string name="expense_cat_transport">Transport</string>
+    <string name="expense_cat_rent">Rent</string>
+    <string name="expense_cat_utilities">Utilities</string>
+    <string name="expense_cat_misc">Miscellaneous</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_guest">Guest</string>
+    <string name="profile_account_label">Signed-in collector</string>
+    <string name="profile_balance_summary">Balance summary</string>
+    <string name="profile_breakdown">Amount breakdown</string>
+    <string name="profile_breakdown_all">All transactions</string>
+    <string name="profile_breakdown_empty">No transactions yet</string>
+    <string name="profile_breakdown_empty_hint">Incoming donations and outgoing expenses will appear here</string>
+    <string name="viewer_access_section">Viewer edit access</string>
+    <string name="viewer_access_toggle">Allow add, edit &amp; delete</string>
+    <string name="viewer_access_on_hint">Viewers can add, edit and delete donations and expenses</string>
+    <string name="viewer_access_off_hint">Viewers can only view data — add, edit and delete are off</string>
+    <string name="viewers_access_enabled">Viewer add/edit/delete turned on</string>
+    <string name="viewers_access_disabled">Viewer add/edit/delete turned off</string>
+    <string name="total_incoming">Total Incoming</string>
+    <string name="total_outgoing">Total Outgoing</string>
+    <string name="remaining_balance">Remaining</string>
+    <string name="remaining_balance_hint">Incoming minus outgoing</string>
+    <string name="remaining_balance_overspent">Outgoing exceeds incoming</string>
+
+    <!-- Payment account details -->
+    <string name="payment_account_details">Payment account details</string>
+    <string name="payment_account_hint">Add UPI, bank details and QR code so donors can pay you easily</string>
+    <string name="payment_account_view_hint">Payment account details for this committee</string>
+    <string name="payment_upi_id">UPI ID</string>
+    <string name="payment_upi_id_hint">name@upi</string>
+    <string name="payment_account_holder">Account holder name</string>
+    <string name="payment_bank_name">Bank name</string>
+    <string name="payment_account_number">Account number</string>
+    <string name="payment_ifsc">IFSC code</string>
+    <string name="payment_qr_code">Payment QR code</string>
+    <string name="payment_qr_empty">No QR uploaded</string>
+    <string name="payment_upload_qr">Upload QR</string>
+    <string name="payment_change_qr">Change QR</string>
+    <string name="payment_remove_qr">Remove</string>
+    <string name="payment_save_details">Save payment details</string>
+    <string name="payment_details_saved">Payment details saved</string>
+    <string name="payment_qr_uploaded">QR code uploaded</string>
+    <string name="payment_qr_removed">QR code removed</string>
+    <string name="payment_qr_upload_failed">Could not upload QR image. Try again.</string>
+    <string name="payment_qr_crop_title">Crop QR code</string>
+    <string name="payment_qr_crop_done">Use photo</string>
+    <string name="payment_qr_crop_failed">Could not crop QR image. Try again.</string>
+</resources>

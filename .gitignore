@@ -1,0 +1,22 @@
+*.iml
+.gradle
+.kotlin
+.tools
+.cursor
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea/firebender/
+.DS_Store
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+# google-services.json belongs only at app/
+/app/src/google-services.json
